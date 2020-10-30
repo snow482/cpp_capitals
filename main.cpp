@@ -17,7 +17,24 @@ void CHANGE_CAPITAL (map<string, string>& country_capitals_value, const string& 
         country_capitals_value.insert(std::make_pair(country, capital));
         return;
     }
+    /*auto it = country_capitals_value.find(country);
+    if (it != country_capitals_value.end()){*/
+/*auto it = country_capitals_value.find(country);
+    if (it != country_capitals_value.end()){
 
+        //1
+        //std::pair<string,string> p;
+        //p.first = country;
+        //p.second = capital;
+        //country_capitals_value.insert(p);
+
+        //2
+        //country_capitals_value.insert(std::make_pair(country, capital));
+
+        //3
+        country_capitals_value[country] = capital;
+        return;
+    }*/
     //const auto& key = it->first;
     //auto& value = it->second;
     /*for (const auto& countryName : country) {
@@ -55,6 +72,14 @@ void DUMP (const map<string, string>& about_all){
 
 int main() {
 /*
+ * int Q;
+    std::cin >> Q;
+    std::string command;
+    string country, capital;
+    cin >> country >> capital;
+    map<string, string> caps;
+ *
+ */
     int Q;
     std::cin >> Q;
     std::string command;
